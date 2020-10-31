@@ -21,7 +21,9 @@ public class Lab5Task {
         int numberOfDigitsInOTP = 6;
         int oneTimePassword = 0;
         for (int index = 0; index < numberOfDigitsInOTP; index++) {
-            int randomNumber = 0;
+            int randomNumber;
+
+
             randomNumber = createRandomNumber();
             int powerOf10 = (int) Math.pow(10, index);
             powerOf10 = randomNumber * powerOf10;
